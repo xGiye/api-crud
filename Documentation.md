@@ -26,19 +26,16 @@ This REST API allows you to perform CRUD (Create, Read, Update, Delete) operatio
 
 1. Clone the repository:
 
-   cbash
-   git clone https://github.com/yourusername/person-api.git
-   cd person-api
+   ```git clone https://github.com/xGiye/api-crud.git```
 
-   ```
+   ```cd person-api```
 
-   ```
 
-2. Install dependencies:
+3. Install dependencies:
 
    `npm install`
 
-3. Start the server:
+4. Start the server:
 
    ```node app.js
 
@@ -53,7 +50,7 @@ The API provides the following endpoints:
 - GET /api: Retrieve a list of all people or filter by name.
 - GET /api/:idOrName: Retrieve a person by ID or name.
 - POST /api: Create a new person.
-- PUT /people/:idorName: Update a person by ID.
+- PATCH /people/:idorName: Update a person by ID.
 - DELETE /people/:idorName: Delete a person by ID.
 
 ### Request/Response Formats
