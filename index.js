@@ -30,3 +30,7 @@ app.use(morgan("dev"));
 
 const person_route = require("./Routes/persons-route");
 app.use("/api", person_route);
+
+app.use("/", (req, res) => {
+  res.redirect("/api");
+});
